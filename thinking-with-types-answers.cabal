@@ -53,7 +53,6 @@ library
     , aeson-pretty
     , bytestring
     , first-class-families
-    , haskus-utils-variant
     , kan-extensions
     , text
     , vector
