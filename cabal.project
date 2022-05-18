@@ -1,0 +1,5 @@
+packages:
+  ./
+
+package thinking-with-types-answers
+  tests: True

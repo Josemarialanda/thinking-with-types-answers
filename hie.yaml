@@ -1,0 +1,16 @@
+cradle:
+  multi:
+    # - path: "ignore/"
+    #   config: {cradle: {none: }}
+
+    - path: "src"
+      config: {cradle: {cabal: {component: "lib:thinking-with-types-answers"}}}
+
+    - path: "app"
+      config: {cradle: {cabal: {component: "thinking-with-types-answers:thinking-with-types-answers-exe"}}}
+
+    - path: "test"
+      config: {cradle: {cabal: {component: "thinking-with-types-answers:thinking-with-types-answers-test"}}}
+
+    - path: "bench"
+      config: {cradle: {cabal: {component: "thinking-with-types-answers:thinking-with-types-answers-bench"}}}
