@@ -212,7 +212,7 @@ makeTypeObj :: forall a. KnownSymbol (ToJSONType a) => Value
 makeTypeObj = object ["type" .= String (pack . symbolVal $ Proxy @(ToJSONType a))]
 
 makePropertyObj :: forall name. (KnownSymbol name) => Value -> Value
-makePropertyObj v = object [pack (symbolVal $ Proxy @name) .= v]
+makePropertyObj v = object ["type" .= String (pack . symbolVal $ Proxy @name) , "properties" .= v]
 
 instance (KnownSymbol nm, KnownSymbol (ToJSONType a))
     => GSchema (M1 S ('MetaSel ('Just nm) _1 _2 _3) (K1 _4 a)) where                      

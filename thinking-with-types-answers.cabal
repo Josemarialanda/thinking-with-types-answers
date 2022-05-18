@@ -31,10 +31,33 @@ common common-options
 library
   import:          common-options
   hs-source-dirs:  src
-  exposed-modules: Lib
+  exposed-modules: Chapter_1
+                 , Chapter_2
+                 , Chapter_3
+                 , Chapter_4
+                 , Chapter_5
+                 , Chapter_6
+                 , Chapter_7
+                 , Chapter_8
+                 , Chapter_9
+                 , Chapter_10
+                 , Chapter_11
+                 , Chapter_12
+                 , Chapter_13
+                 , Chapter_14
+
   build-depends:
     , containers
     , mtl
+    , aeson
+    , aeson-pretty
+    , bytestring
+    , first-class-families
+    , haskus-utils-variant
+    , kan-extensions
+    , text
+    , vector
+    , world-peace
 
 executable thinking-with-types-answers-exe
   import:         common-options
