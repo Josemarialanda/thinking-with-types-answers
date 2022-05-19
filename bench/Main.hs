@@ -1,4 +1,2 @@
-import Lib
-
 main :: IO ()
-main = putStrLn "heyyyyyyyyyyyyyyyyyyyy"
+main = putStrLn "Hello, World!"
